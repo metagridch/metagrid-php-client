@@ -1,0 +1,1 @@
+This is a small client to use the metagrid API in php
