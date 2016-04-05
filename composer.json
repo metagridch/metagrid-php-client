@@ -1,0 +1,15 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Metagrid\\": "src/",
+            "Metagrid\\Tests": "tests/"
+        }
+    }
+
+}
