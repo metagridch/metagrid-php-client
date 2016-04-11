@@ -72,5 +72,11 @@ class HLSLinkBuilder implements LinkBuilderInterface {
         }
         return $result;
     }
+    /**
+    * Exclude resource with identifier 1,2,3
+    **/
+    private function isExclude($identifier){
+        return inArray($identifier, array(1,2,3));
+    }
 }```
 
