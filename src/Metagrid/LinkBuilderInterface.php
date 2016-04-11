@@ -16,7 +16,7 @@ interface LinkBuilderInterface {
      * @param string $resourceType
      * @param string $lang
      * @param boolean $includeDescription
-     * @return string
+     * @return string | false
      */
     public function make ($slug = 'dds', $identifier = '', $resourceType = 'person', $lang = 'de', $includeDescription = false);
 }

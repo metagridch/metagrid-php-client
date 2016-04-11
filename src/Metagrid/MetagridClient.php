@@ -46,7 +46,9 @@ class MetagridClient
      * @return array|boolean
      */
     public function get($slug = 'dds', $identifier = '', $resourceType = 'person', $lang = 'de', $includeDescription = false){
-        return $this->getUrl($this->getLinkBuilder()->make($slug, $identifier, $resourceType, $lang, $includeDescription));
+        $url = $this->getLinkBuilder()->make($slug, $identifier, $resourceType, $lang, $includeDescription);
+        if($url === false) return array();
+        return $this->getUrl($url);
     }
 
     /**
