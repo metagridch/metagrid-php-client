@@ -1,6 +1,6 @@
 This is a small client to use the metagrid API in php.
 
-PHP-Spider Features
+Metagrid Client Features
 ======
 - Easy to use interface to interact with the metagrid API
 - Possibility to change the process of linkbuilding
