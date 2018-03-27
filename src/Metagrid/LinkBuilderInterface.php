@@ -3,7 +3,7 @@ namespace Metagrid;
 
 /**
  * Created by PhpStorm.
- * User: tmen
+ * User: tobinski
  * Date: 15.03.16
  * Time: 11:08
  */
@@ -18,5 +18,5 @@ interface LinkBuilderInterface {
      * @param boolean $includeDescription
      * @return string | false
      */
-    public function make ($slug = 'dds', $identifier = '', $resourceType = 'person', $lang = 'de', $includeDescription = false);
+    public function make ($slug = '', $identifier = '', $resourceType = 'person', $lang = 'de', $includeDescription = false);
 }

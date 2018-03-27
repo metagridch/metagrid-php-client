@@ -5,10 +5,11 @@ require_once(__DIR__ . '/../../vendor/autoload.php');
 use \GuzzleHttp\Client;
 use \GuzzleHttp\Exception\ClientException;
 use \GuzzleHttp\ClientInterface;
+use \GuzzleHttp\Exception\GuzzleException;
 
 /**
  * Created by PhpStorm.
- * User: tmen
+ * User: tobinski
  * Date: 15.03.16
  * Time: 10:47
  */
@@ -65,6 +66,10 @@ class MetagridClient
             $response = $this->getClient()->request('GET', $url, array());
         }
         catch(ClientException $e){
+            // todo: log error
+            return false;
+        }
+        catch(GuzzleException $e) {
             // todo: log error
             return false;
         }
