@@ -19,4 +19,4 @@ install:
   - rm composer.lock
   - travis_retry composer update --prefer-dist
 
-script: ./vendor/bin/phpunit --coverage-text
+script: ./vendor/bin/phpunit ./tests
