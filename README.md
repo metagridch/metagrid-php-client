@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/metagridch/metagrid-php-client.svg?branch=master)](https://travis-ci.org/metagridch/metagrid-php-client)
+
 This is a small client to use the metagrid API with php.
 
 Metagrid Client Features
@@ -9,7 +11,7 @@ Installation
 ------------
 The easiest way to install Metagrid-Client is with [git](http://git.org/).
 ```bash
-git clone git@source.dodis.ch:metagrid/client-php.git
+git clone https://github.com/metagridch/metagrid-php-client.git
 ```
 
 Use [composer](http://getcomposer.org) to install dependencies
